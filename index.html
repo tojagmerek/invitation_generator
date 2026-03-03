@@ -4,10 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generator Zaproszeń</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&family=Chiron+Hei+HK:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/img/favicon-96x96.png" type="image/png" sizes="96x96">
 </head>
 <body>
-    
+    <header>
+        <img src="assets/img/web_icon.png" alt="logo generatora">
+        <h1>Generator PDF - Zaproszenia, Winietki i Podziękowania</h1>
+    </header>
+    <div class="main">
+        <div class="main__info">
+            <h3>Wybierz elementy do wygenerowania</h3>
+            <div class="picker">
+                <label class="picker__item">
+                    <input class="picker__chk" type="checkbox" />
+                    <span>Zaproszenia</span>
+                </label>
+
+                <label class="picker__item">
+                    <input class="picker__chk" type="checkbox" />
+                    <span>Winietki</span>
+                </label>
+
+                <label class="picker__item">
+                    <input class="picker__chk" type="checkbox" />
+                    <span>Podziękowania</span>
+                </label>
+            </div>
+            
+            <hr>
+            <div class="list">
+                <h3>Dodaj gości / rodziny</h3>
+                <button id="addGroup">+ Dodaj grupę</button>
+            </div>
+            <div id="list__groups">
+                
+            </div>
+        </div>
+        <div class="main__styleAndSummary">
+            <h3>Podgląd szablonów</h3>
+            <p>Wybierz styl, który ma zostać użyty:</p>
+            <div id="styles">
+                <fieldset>
+                    <label for="s1">
+                        <div>
+                            <input type="radio" name="cardStyle" id="s1">
+                            <span>Kwiatowy</span>
+                        </div>
+                        <img src="" alt="StylKwiatowy">
+                    </label>
+                    <label for="s2">
+                        <div>
+                            <input type="radio" name="cardStyle" id="s2">
+                            <span>Kwiatowy</span>
+                        </div>
+                        <img src="" alt="StylKwiatowy">
+                    </label>
+                    <label for="s3">
+                        <div>
+                            <input type="radio" name="cardStyle" id="s3">
+                            <span>Kwiatowy</span>
+                        </div>
+                        <img src="" alt="StylKwiatowy">
+                    </label>
+                </fieldset>
+            </div>
+            <h3>Podsumowanie</h3>
+            <div id="summary">
+                <p>Zaproszenia: <span id="summaryInvitations"></span> szt.</p>
+                <p>Winietki: <span id="summaryVignette"></span> szt.</p>
+                <p>Podziękowania: <span id="summaryThanks"></span> szt.</p>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="script.js"></script>
 </html>
