@@ -34,7 +34,17 @@
                     <span>Podziękowania</span>
                 </label>
             </div>
-            
+            <div>
+                <label for="when">
+                    <span>Data wydarzenia: </span>
+                    <input type="date" id="when">
+                </label>
+                <label for="where">
+                    <span>Miejsce wydarzenia: </span>
+                    <input type="text" id="where">
+                </label>
+                 
+            </div>
             <hr>
             <div class="list">
                 <h3>Dodaj gości / rodziny</h3>
@@ -52,32 +62,56 @@
                     <label for="s1">
                         <div>
                             <input type="radio" name="cardStyle" id="s1">
-                            <span>Kwiatowy</span>
+                            <span></span>
                         </div>
-                        <img src="" alt="StylKwiatowy">
+                        <img src="assets/img/zap1.png" alt="StylKwiatowy">
                     </label>
                     <label for="s2">
                         <div>
                             <input type="radio" name="cardStyle" id="s2">
-                            <span>Kwiatowy</span>
+                            <span></span>
                         </div>
-                        <img src="" alt="StylKwiatowy">
+                        <img src="assets/img/zap2.png" alt="StylKwiatowy">
                     </label>
                     <label for="s3">
                         <div>
                             <input type="radio" name="cardStyle" id="s3">
-                            <span>Kwiatowy</span>
+                            <span></span>
                         </div>
-                        <img src="" alt="StylKwiatowy">
+                        <img src="assets/img/zap3.png" alt="StylKwiatowy">
                     </label>
                 </fieldset>
             </div>
+            <p>Wybierze czcionkę:</p>
+            <div id="fonts">
+                <fieldset>
+                    <label for="f1">
+                    <div>
+                        <input type="radio" name="fontStyle" id="f1">
+                    </div>
+                    <img src="assets/img/f1.png" alt="czcionka">
+                </label>
+                <label for="f2">
+                    <div>
+                        <input type="radio" name="fontStyle" id="f2">
+                    </div>
+                    <img src="assets/img/f1.png" alt="czcionka">
+                </label>
+                <label for="f3">
+                    <div>
+                        <input type="radio" name="fontStyle" id="f3">
+                    </div>
+                    <img src="assets/img/f1.png" alt="czcionka">
+                </label>
+                </fieldset>  
+            </div>
             <h3>Podsumowanie</h3>
             <div id="summary">
-                <p>Zaproszenia: <span id="summaryInvitations"></span> szt.</p>
-                <p>Winietki: <span id="summaryVignette"></span> szt.</p>
-                <p>Podziękowania: <span id="summaryThanks"></span> szt.</p>
+                <p>Zaproszenia: <span id="summaryInvitations">0</span> szt.</p>
+                <p>Winietki: <span id="summaryVignette">0</span> szt.</p>
+                <p>Podziękowania: <span id="summaryThanks">0</span> szt.</p>
             </div>
+            <button></button>
         </div>
     </div>
 </body>
