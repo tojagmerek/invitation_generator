@@ -110,6 +110,26 @@ header img {
     color: white;
     font-size: 1.5rem;
 }
+#eventInformation {
+    margin: 0 0 4% 0;
+    font-size: 1.5rem;
+}
+
+#eventInformation label input {
+    background-color: var(--white4);
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+#eventInformation label select {
+    background-color: var(--white4);
+    border: none;
+    padding: 1.5rem;
+    padding-right: 2rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+}
 
 .list {
     display: flex;
