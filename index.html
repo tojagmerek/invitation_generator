@@ -20,21 +20,21 @@
             <h3>Wybierz elementy do wygenerowania</h3>
             <div class="picker">
                 <label class="picker__item">
-                    <input class="picker__chk" type="checkbox" />
+                    <input id="InvChk" class="picker__chk" type="checkbox" />
                     <span>Zaproszenia</span>
                 </label>
 
                 <label class="picker__item">
-                    <input class="picker__chk" type="checkbox" />
+                    <input id="InvVig" class="picker__chk" type="checkbox" />
                     <span>Winietki</span>
                 </label>
 
                 <label class="picker__item">
-                    <input class="picker__chk" type="checkbox" />
+                    <input id="InvThs" class="picker__chk" type="checkbox" />
                     <span>Podziękowania</span>
                 </label>
             </div>
-            <div>
+            <div id="event_info">
                 <label for="when">
                     <span>Data wydarzenia: </span>
                     <input type="date" id="when">
@@ -43,7 +43,17 @@
                     <span>Miejsce wydarzenia: </span>
                     <input type="text" id="where">
                 </label>
-                 
+                <label for="type">
+                    <span>Rodzaj Wydarzenia: </span>
+                    <select id="type">
+                        <option value="">Wybierz wydarzenie</option>
+                        <option value="urodziny">Urodziny</option>
+                        <option value="wesele">Wesele</option>
+                        <option value="komunia">Komunia</option>
+                        <option value="chrzciny">Chrzciny</option>
+                        <option value="rocznica">Rocznica</option>
+                    </select>
+                </label>
             </div>
             <hr>
             <div class="list">
