@@ -16,6 +16,7 @@ btn.addEventListener("click", () => {
     <input type="text" class="person-input" placeholder="Wypisz imie i nazwisko."/>
     <button type="button" class="addPersonBtn">+ Dodaj osobę</button>
     <hr>
+    <button type="button" class="deletePersonBtn">X</button>
     `;
 
     container.appendChild(section);
