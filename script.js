@@ -28,17 +28,26 @@ btn.addEventListener("click", () => {
 const group = document.querySelector("#list__groups");
 
 group.addEventListener("click", (e) => {
-    const btn = e.target.closest(".addPersonBtn");
-    if(!btn) return;
-    
-    const section = btn.closest(".section");
-    const input = document.createElement("input");
-    input.type = "text";
-    input.placeholder = "Wypisz imie i nazwisko.";
-    input.classList.add("person-input");
+    if(e.target.closest(".addPersonBtn")) {
+        const btn = e.target.closest(".addPersonBtn");
+        const section = btn.closest(".section");
+        const input = document.createElement("input");
+        input.type = "text";
+        input.placeholder = "Wypisz imie i nazwisko.";
+        input.classList.add("person-input");
 
-    section.insertBefore(input, btn);
-    updateSummary();
+        section.insertBefore(input, btn);
+        updateSummary();
+        return;
+    }
+    
+    if(e.target.closest(".deletePersonBtn")) {
+        const deleteBtn = e.target.closest(".deletePersonBtn");
+        const section = deleteBtn.closest(".section");
+        section.remove();
+        updateSummary(); 
+        return;      
+    }
 });
 
 //Show Summary info
